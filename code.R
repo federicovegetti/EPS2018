@@ -14,7 +14,7 @@ ifelse(!dir.exists("./tables"), dir.create("./tables"), FALSE)
 # Import data 
 #====================================================================================================
 rm(list = ls())
-data <- import("./data/dataEPS.csv")
+data <- import("./dataEPS.csv")
   
 #====================================================================================================
 # YOUNG ADULTS - RECODES
@@ -434,7 +434,7 @@ rm(pp.1, pp.2, full)
          device = "png", dpi = 300, width = 7, height = 3.7)
 
 #====================================================================================================
-# FIGURE 6 - CORRELATES of WELFARE ATTITUDES + MINIMUM INCOME
+# FIGURE 4 - CORRELATES of WELFARE ATTITUDES + MINIMUM INCOME
 #====================================================================================================
 m.1 <- clm(factor(mininc) ~ movedout + factor(indinc) + essbasic + essextra + finsatdummy + 
              p.mininc + p.essbasic + p.essextra + p.finsatdummy +
